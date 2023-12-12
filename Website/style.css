@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.background {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Assets/background0.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
