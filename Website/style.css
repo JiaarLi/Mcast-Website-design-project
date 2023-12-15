@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-
+/* background */
 .page {
     min-height: 100vh;
     width: 100%;
@@ -14,86 +14,153 @@
     background-position: center;
     position: relative;
 }
+/* background */
 
 
-
-
+/* navbar */
 .banner {
-    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    height: 122px;
     width: 100%;
     background-color: black;
-    border-bottom-left-radius: 50% 60px;
-    border-bottom-right-radius: 50% 60px;       
+    border-bottom-left-radius: 70% 90px;
+    border-bottom-right-radius: 70% 90px;       
     margin: auto;
     position: absolute;
-
 }
 
-
-
-
-.bannerlist{
+.navbar{
+    /*  border: 1px solid green; */
+    top: -160px;
+    left: 110px;
     
-    position: relative;
-    top: -90px;
-
-    width: 85%;
+    position: absolute;
     margin: auto;
-    padding: 0px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-
+    width: 90%;
+    padding: 0px;
 }
 
-
-.bannerlist ul li{
-    padding-top: 50px;
-    top: 0px;
-    font-size: 26px;
-    list-style: none;
-    display: inline-block;
-    margin: 0 92px;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-.bannerlist ul li a{
+.navbar a{
     text-decoration: none;
+    display: inline-block;
+
     color: white;
     text-transform: uppercase;
-}
-
-.bannerlist ul li a:hover{
     transition: 0.2s;
-    font-size: 30px;
-    
-    background-color: linear-gradient(rgba(44, 44, 44, 0.75),rgba(20, 20, 20, 0.75))
+    font-family: 'Cinzel';
+
+    padding: 6%;
+    font-size: 23px;
 }
 
+.navbar a:hover{
+    
+    transform: scale(1.08);
+}
+/* navbar */
 
+
+
+
+/* screen center */
 .logo{
     position: relative;
-    top: 60px;
+    top: 50px;
     height: 120px;
     width: 120px;
-
-    cursor: pointer;
 }
 
-.logo:hover{
+
+
+.centered{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.pageTitle h1{ 
+    position: absolute;
+    top: 526px;
+    width: 100%;
+    
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+
+    color: white;
+    font-size: 210px;
+    font-family: 'Cinzel', Times, serif;
+    text-shadow: 2px 2px 8px #000000;
+}
+/* screen center */
+
+
+
+/* SUBBUTTONS */
+
+.subButtons ul{
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+
+
+.subButtons ul li {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+
+.subButtons ul li a {
+    visibility: visible;
+    color: white;
+    text-decoration: none;
+}
+
+
+.subButtons ul li a h2{
+
+    pointer-events: none;
+    position: relative;
+    top: -62px;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    font-family:  'Cinzel', Times, serif;
+}
+
+.subButtons ul li a p{
+    display: none;
+    pointer-events: none;
+    position: relative;
+    top: -96px;
+
+    left: 15%;
+    font-family:  'Cinzel', Times, serif;
+
+    font-size: 14px;
+    width:360px;   
+    word-wrap: normal;
+
     transition: 0.2s;
-    height: 130px;
-    width: 130px;
-
 }
 
 
-
-
-
-.h1{
-    font-family: "Garamond";
+.subButtons li  img{ 
+    margin: 0 auto;
+    transition: 0.2s;
 }
 
+.subButtons li img:hover {
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1.08);
+}
+
+.subButtons:hover + .hide {
+    display: block;
+}
+
+/* SUBBUTTONS*/
