@@ -31,34 +31,84 @@
 }
 
 .navbar{
-    /*  border: 1px solid green; */
-    top: -160px;
-    left: 110px;
     
+    /* border: 1px solid green;  */
     position: absolute;
-    margin: auto;
-    width: 90%;
-    padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
 }
 
 .navbar a{
+    position: relative;
+
     text-decoration: none;
     display: inline-block;
+
+    text-align: center;
+    width: 190px;
 
     color: white;
     text-transform: uppercase;
     transition: 0.2s;
     font-family: 'Cinzel';
 
-    padding: 6%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    margin-left: 2%;
+    margin-right: 2%;
+
     font-size: 23px;
 }
 
 .navbar a:hover{
-    
-    transform: scale(1.08);
+    text-shadow: 0px 0px 15px #ffffff;
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 /* navbar */
+
+
+/* dropdowns */
+
+.dropdown{
+    display: none;
+}
+.navbar a:hover .dropdown{
+    display: block;
+}
+
+
+/* dropdowns */
+
+
+
+.container{
+   /* position : relative;*/
+    width: 100%; 
+    height: 750;
+}
+
+.container img:hover{
+    
+    transition: 0.6s;
+    /*transform: scale(1.01);*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -66,7 +116,7 @@
 /* screen center */
 .logo{
     position: relative;
-    top: 50px;
+    top: -04px;
     height: 120px;
     width: 120px;
 }
@@ -83,25 +133,37 @@
 
 .pageTitle h1{ 
     position: absolute;
-    top: 526px;
+    top: 478px;
     width: 100%;
     
     text-align: center;
     padding: 0;
     display: inline-block;
 
+    pointer-events:none;
+
     color: white;
     font-size: 210px;
     font-family: 'Cinzel', Times, serif;
     text-shadow: 2px 2px 8px #000000;
+
+    transform: scaleY(1.6);
 }
 /* screen center */
 
 
 
 /* SUBBUTTONS */
+.subButtons {
+
+    position: absolute;
+    width:100%;   
+    margin-top: 3px;
+
+}
 
 .subButtons ul{
+    
     text-decoration: none;
     text-align: center;
     position: relative;
@@ -109,58 +171,77 @@
 
 
 .subButtons ul li {
+    padding-left: 50px;
+    padding-right: 50px;
+
     display: inline-block;
-    vertical-align: top;
+
   }
 
 
-.subButtons ul li a {
+.subButtons a {
     visibility: visible;
     color: white;
     text-decoration: none;
 }
 
 
-.subButtons ul li a h2{
-
+.subButtons h2{
+    visibility: visible;
     pointer-events: none;
-    position: relative;
-    top: -62px;
-    text-align: center;
+    position: absolute;
+    top: 28px;
+
+    width:390px;   
+    word-wrap: normal;
     padding: 0;
-    position: relative;
     font-family:  'Cinzel', Times, serif;
 }
 
-.subButtons ul li a p{
-    display: none;
+
+.subButtons p{
+    visibility: hidden;
     pointer-events: none;
-    position: relative;
-    top: -96px;
-
-    left: 15%;
+    position: absolute;
+    top: 36px;
     font-family:  'Cinzel', Times, serif;
-
-    font-size: 14px;
-    width:360px;   
+    font-size: 15px;
+    width:390px;   
     word-wrap: normal;
 
-    transition: 0.2s;
-}
-
-
-.subButtons li  img{ 
-    margin: 0 auto;
-    transition: 0.2s;
 }
 
 .subButtons li img:hover {
+
+    filter: brightness(30%);
     border: 1px solid rgb(255, 255, 255);
     transform: scale(1.08);
+    transition: 0.13s;
 }
 
-.subButtons:hover + .hide {
-    display: block;
+
+
+.subButtons li :hover .hide{
+    top: 10px;
+    font-size: 19px;
+    text-decoration: underline;
+    transition: 0.05s;
+    
 }
+
+.subButtons li :hover .unhide{
+    visibility: visible;
+}
+
+
 
 /* SUBBUTTONS*/
+
+
+.rectangle {
+    position: absolute;
+    top:910px;
+    height: 580px;
+    width: 100%;
+    background-color: #555;
+  }
